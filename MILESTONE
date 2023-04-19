@@ -16,18 +16,20 @@ Creazione MainComp, al suo interno creiamo la struttura dove andremo a visualizz
 i risultati della ricerca, implementiamo la struttura con i componenti specifici 'in' base
 alle categorie, esempio: film, serie Tv etc...
 
-'MILESTONE 4 '
+'MILESTONE 4'
+Disporre i componenti delle categorie 'in' row orizzontali con due btn laterali per muoversi da Sx a Dx 
+nella selezione dei risultati
+
+'MILESTONE 5 '
 Creazione dei componenti delle varie categorie, popolare dinamicamente i componenti 
 e farli visualizzare 'in' pagina sottoforma di card,far visualizzare inizialmente tutti i risultati,
 'in' base alla ricerca mostrare solo i risultati richiesti dall utente
 
-'MILESTONE 5'
+'MILESTONE 6'
 Aggiungere un hover sulle card 'in' modo che l utente possa vedere i dati inerenti alla specifica card
 
 
-'MILESTONE 6'
-Disporre i componenti delle categorie 'in' row orizzontali con due btn laterali per muoversi da Sx a Dx 
-nella selezione dei risultati
+
 
 
 
