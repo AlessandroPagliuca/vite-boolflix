@@ -1,0 +1,34 @@
+Descrizione:
+
+'MILESTONE 1'
+Creazione componente HeaderComp, al suo interno avremo 
+un titolo ed un componente che si occuperà della barra di ricerca,
+composto da una casella di 'input 'ed un bottone per avviare la ricerca 
+
+
+'MILESTONE 2'
+Creazione 'del' componente SearchComp per la ricerca da implementare nel HeaderComp,
+gestire il risultato nell 'input' nel caso ci fosse un errore nella ricerca, stampare 
+un messaggio di avviso 
+
+'MILESTONE 3'
+Creazione MainComp, al suo interno creiamo la struttura dove andremo a visualizzare 
+i risultati della ricerca, implementiamo la struttura con i componenti specifici 'in' base
+alle categorie, esempio: film, serie Tv etc...
+
+'MILESTONE 4 '
+Creazione dei componenti delle varie categorie, popolare dinamicamente i componenti 
+e farli visualizzare 'in' pagina sottoforma di card,far visualizzare inizialmente tutti i risultati,
+'in' base alla ricerca mostrare solo i risultati richiesti dall utente
+
+'MILESTONE 5'
+Aggiungere un hover sulle card 'in' modo che l utente possa vedere i dati inerenti alla specifica card
+
+
+'MILESTONE 6'
+Disporre i componenti delle categorie 'in' row orizzontali con due btn laterali per muoversi da Sx a Dx 
+nella selezione dei risultati
+
+
+
+
