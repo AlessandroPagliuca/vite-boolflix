@@ -85,10 +85,27 @@
         background: #2b2727;
         overflow-y: auto;
 
-        .c92-row{
-            flex-flow: row nowrap;
-            overflow-x: auto;
+        .card{
+            position: relative;
+
+            .card-body{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: 0.7s;
+                background-color: black;
+            }
+
+            &.card:hover .card-body{
+                opacity: 0.9;
+            }
+
         }
+        
+
         
     }
 
