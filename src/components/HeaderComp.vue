@@ -40,6 +40,7 @@
         height: 80px;
         background: rgba(0, 0, 0, 0.8);
         position: fixed;
+        z-index: 1000;
         
     }
 
