@@ -1,19 +1,35 @@
 <template>
-    <header class="p-3">
+    <header class="container-fluid">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <h1 class="text-uppercase text-danger">netflix</h1>
-            <SearchBar/>
+            
+            <div class="d-flex justify-content-center">
+                <div class="form-group">
+                    <input type="text" v-model="store.params.query" class="form-control" placeholder="Search" @keyup.enter="search">
+                </div>
+                
+                <button type="btn" class="btn btn-danger mx-2" @click="search">Search</button>
+
+            </div>
+        
         </div>
     </header>
 </template>
 
 <script>
-    import SearchBar from './SearchBar.vue';
+    import {store} from '../data/store';
     export default {
         name: 'HeaderComp',
-        components:{
-            SearchBar,
+        data(){
+            return{
+                store,
+            }
         },
+        methods:{
+            search(){
+                this.$emit('onSearch');
+            }
+        }
         
     }
 </script>
@@ -22,7 +38,6 @@
     header{
         width: 100%;
         height: 80px;
-        background-color: rgb(5, 5, 5,);
         
     }
 
