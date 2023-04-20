@@ -1,5 +1,5 @@
 <template>
-  <HeaderComp @on-search="getMovies" />
+  <HeaderComp @on-search="getData" />
   <MainComp />
 </template>
 
@@ -30,6 +30,19 @@ export default {
 
       });
 
+    },
+    getSeries() {
+      const url = this.store.baseUrl + this.store.endpoint.serie;
+      axios.get(url, { params: this.store.params }).then((res) => {
+        console.log(res.data.results);
+        this.store.seriesList = res.data.results;
+
+      });
+
+    },
+    getData(){
+      this.getMovies();
+      this.getSeries();
     }
   },
 
