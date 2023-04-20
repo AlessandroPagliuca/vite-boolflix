@@ -51,7 +51,7 @@ export default {
 
     &.card:hover .card-body {
         opacity: 1;
-        background: rgba(20, 20, 20, 0.5);
+        background: rgba(20, 20, 20, 0.6);
         color: white;
     }
 

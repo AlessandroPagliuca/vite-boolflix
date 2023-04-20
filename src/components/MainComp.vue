@@ -4,6 +4,7 @@
         <section  class="container-fluid">
 
             <h2 class="text-white p-3">Films</h2>
+            <img src="../" alt="">
 
             <div class="row justify-content-center">
 
@@ -54,8 +55,10 @@
             }
         },
         methods:{
-          
-        }
+           getImg(){
+                let pathImg = 
+           }
+        },
     }
 </script>
 
