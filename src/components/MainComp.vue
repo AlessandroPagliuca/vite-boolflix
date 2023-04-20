@@ -11,7 +11,7 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-8 col-sm-6 col-md-4 col-lg-3 p-3" v-for="movie in store.moviesList">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="movie in store.moviesList">
                     
                     <SingleCard :title="movie.title" :src_image="store.imgBaseURL + movie.poster_path"
                     :original_title="movie.original_title" :original_language="movie.original_language"
@@ -29,7 +29,7 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-8 col-sm-6 col-md-4 col-lg-3 p-3" v-for="serie in store.seriesList">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="serie in store.seriesList">
 
                     <SingleCard :title="serie.name" :src_image="store.imgBaseURL + serie.poster_path"
                     :original_title="serie.original_title" :original_language="serie.original_language"

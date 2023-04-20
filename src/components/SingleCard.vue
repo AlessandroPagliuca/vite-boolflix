@@ -32,9 +32,10 @@ export default {
 <style lang="scss" scoped>
 .card {
     position: relative;
-    border: 2px solid black;
     height: 600px;
     cursor: pointer;
+    box-shadow: 0 0 0.9rem rgb(80, 80, 80);
+    --bs-card-bg: black !important;
 
     img{
         width: 100%;
@@ -48,6 +49,10 @@ export default {
         bottom: 0;
         opacity: 0;
         transition: 0.7s;
+
+        p{
+            font-size: 22px;
+        }
     }
 
     &.card:hover .card-body {
