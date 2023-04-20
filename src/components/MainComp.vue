@@ -3,15 +3,11 @@
 
         <section  class="container-fluid">
 
-            <div class="row justify-content-center gap-3">
+            <h2 class="text-white p-3">Films</h2>
 
-                <div class="col-12">
+            <div class="row justify-content-center">
 
-                    <h2 class="text-white">Films</h2>
-
-                </div>
-
-                <div class="col-8 col-sm-6 col-md-4 col-lg-3" v-for="movie in store.moviesList">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3 p-3" v-for="movie in store.moviesList">
                     
                     <div class="card">
 
@@ -35,16 +31,13 @@
         </section>
 
         <section  class="container-fluid">
+           
+            <h2 class="text-white p-3">Tv / Series</h2>
 
-            <div class="row justify-content-center gap-3">
 
-                <div class="col-12">
+            <div class="row justify-content-center">
 
-                    <h2 class="text-white">Tv / Series</h2>
-
-                </div>
-
-                <div class="col-8 col-sm-6 col-md-4 col-lg-3" v-for="serie in store.seriesList">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3 p-3" v-for="serie in store.seriesList">
                     
                     <div class="card">
 
@@ -87,9 +80,15 @@
 
 <style lang="scss" scoped>
     main{
-        padding-top: 80px;
         width: 100%;
-        background: #000;
+        height: calc(100vh - 80px);
+        background: #2b2727;
+        overflow-y: auto;
+
+        .c92-row{
+            flex-flow: row nowrap;
+            overflow-x: auto;
+        }
         
     }
 
