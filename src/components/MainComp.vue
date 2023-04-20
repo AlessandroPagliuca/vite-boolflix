@@ -3,10 +3,13 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="movie in store.moviesList">
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" :src="store.imgBaseURL + movie.poster_path" :alt="movie.title">
                     <div class="card-body">
-                        <p>{{ movie.title }}</p>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">{{ movie.title }}</p>
+                        <p class="card-text">{{ movie.original_title }}</p>
+                        <p class="card-text">{{ movie.original_language }}</p>
+                        <p class="card-text">{{ movie.vote_average }}</p>
+
                     </div>
                 </div>
             </div>
@@ -17,6 +20,7 @@
 
 <script>
     import {store} from '../data/store';
+    import axios from 'axios';
     export default {
         name: 'MainComp',
         data(){
@@ -25,7 +29,7 @@
             }
         },
         methods:{
-
+          
         }
     }
 </script>

@@ -9,7 +9,7 @@ export const store = reactive({
     },
     endpoint: {
         movie: 'search/movie',
-        tv: 'search/tv'
+        tv: 'search/tv',
     },
-    imgURL: 'https://image.tmdb.org/t/p/',
+    imgBaseURL: 'https://image.tmdb.org/t/p/w342',
 });
