@@ -1,5 +1,5 @@
 <template>
-    <header class="container-fluid">
+    <header class="container-fluid d-flex align-items-center">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <h1 class="text-uppercase text-danger">netflix</h1>
             
@@ -38,6 +38,7 @@
     header{
         width: 100%;
         height: 80px;
+        background-color: black;
         
     }
 
