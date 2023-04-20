@@ -1,6 +1,10 @@
 <template>
     <main>
-
+        <!--Jumbotron-->
+        <div id="jumbo">
+            <img src="/jumbonetflix.png" alt="">
+        </div>
+        <!--section films-->
         <section  class="container-fluid">
 
             <h2 class="text-white p-3">Films</h2>
@@ -18,7 +22,7 @@
             </div>
 
         </section>
-
+        <!--section films-->
         <section  class="container-fluid">
            
             <h2 class="text-white p-3">Tv / Series</h2>
@@ -76,10 +80,20 @@
 <style lang="scss" scoped>
     main{
         width: 100%;
-        height: calc(100vh - 80px);
-        background: #2b2727;
+        height: 100vh;
+        background: #000000;
         overflow-y: auto;
         
+    }
+    #jumbo{
+        width: 100%;
+        height: 500px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
 </style>

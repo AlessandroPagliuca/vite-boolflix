@@ -34,6 +34,7 @@ export default {
     position: relative;
     border: 2px solid black;
     height: 600px;
+    cursor: pointer;
 
     img{
         width: 100%;
