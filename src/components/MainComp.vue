@@ -87,12 +87,13 @@
     }
     #jumbo{
         width: 100%;
-        height: 500px;
+        height: 600px;
 
         img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit:cover;
+            object-position: 50% 50%;
         }
     }
 
