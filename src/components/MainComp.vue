@@ -15,10 +15,10 @@
                         
                         <div class="card-body">
 
-                            <p class="fw-semibold">{{ movie.title }}</p>
-                            <p class="fw-semibold">{{ movie.original_title }}</p>
-                            <p class="fw-semibold">{{ movie.original_language }}</p>
-                            <p class="fw-semibold">{{ movie.vote_average }}</p>
+                            <p class="fw-semibold">Title: {{ movie.title }}</p>
+                            <p class="fw-semibold">Original title: {{ movie.original_title }}</p>
+                            <p class="fw-semibold">Original language: {{ movie.original_language }}</p>
+                            <p class="fw-semibold">Vote: {{ movie.vote_average }}</p>
 
                         </div>
 
@@ -45,10 +45,10 @@
                         
                         <div class="card-body">
 
-                            <p class="fw-semibold">{{ serie.name }}</p>
-                            <p class="fw-semibold">{{ serie.original_title }}</p>
-                            <p class="fw-semibold">{{ serie.original_language }}</p>
-                            <p class="fw-semibold">{{ serie.vote_average }}</p>
+                            <p class="fw-semibold">Title: {{ serie.name }}</p>
+                            <p class="fw-semibold">Original title: {{ serie.original_title }}</p>
+                            <p class="fw-semibold">Original language: {{ serie.original_language }}</p>
+                            <p class="fw-semibold">Vote: {{ serie.vote_average }}</p>
 
                         </div>
 
@@ -87,7 +87,7 @@
 
         .card{
             position: relative;
-
+            border: 2px solid black;
             .card-body{
                 position: absolute;
                 top: 0;
@@ -96,11 +96,12 @@
                 bottom: 0;
                 opacity: 0;
                 transition: 0.7s;
-                background-color: black;
             }
 
             &.card:hover .card-body{
-                opacity: 0.9;
+                opacity: 1;
+                background: rgba(20, 20, 20, 0.5);
+                color: white;
             }
 
         }
