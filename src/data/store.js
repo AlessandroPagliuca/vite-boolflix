@@ -13,4 +13,6 @@ export const store = reactive({
         serie: 'search/tv',
     },
     imgBaseURL: 'https://image.tmdb.org/t/p/w342',
+    
+    //imgNull: './image/nullimg.png'
 });

@@ -4,7 +4,6 @@
         <section  class="container-fluid">
 
             <h2 class="text-white p-3">Films</h2>
-            <img src="../" alt="">
 
             <div class="row justify-content-center">
 
@@ -55,9 +54,21 @@
             }
         },
         methods:{
-           getImg(){
-                let pathImg = 
-           }
+          /* getMovieImg(){
+            if(this.store.moviesList.poster_path !== null || this.store.moviesList.poster_path !== undefined){
+                return this.store.moviesList.poster_path;
+            } else{
+                return this.store.imgNull;
+            }
+        },
+        getSeriesImg(){
+            if(this.store.moviesList.poster_path !== null || this.store.moviesList.poster_path !== undefined){
+                return this.store.seriesList.poster_path;
+            } else{
+                return this.store.imgNull;
+            }
+        }*/
+
         },
     }
 </script>
