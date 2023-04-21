@@ -9,7 +9,7 @@
 
             <h2 class="text-white p-3">Films</h2>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-start">
 
                 <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="movie in store.moviesList">
                     
@@ -29,7 +29,7 @@
            
             <h2 class="text-white p-3">Tv / Series</h2>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-start">
 
                 <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="serie in store.seriesList">
 
