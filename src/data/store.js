@@ -12,7 +12,8 @@ export const store = reactive({
         movie: 'search/movie',
         serie: 'search/tv',
     },
-    imgBaseURL: 'https://image.tmdb.org/t/p/w342',
+    imgBaseURL: 'https://image.tmdb.org/t/p/',
+    fileSize: 'w342',
     
     //imgNull: './image/nullimg.png'
 });
