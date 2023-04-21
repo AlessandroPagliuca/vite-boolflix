@@ -6,11 +6,15 @@
         <div class="card-body">
 
             <h5>Title: {{ title }}</h5>
-            <h5>Original title: {{ original_title }}</h5>
-            <p class="card-text">Original language: {{ original_language }}</p>
+            <h5 class="my-3">Original title: {{ original_title }}</h5>
+            <span class="card-text">Original language:</span>
+
+            <div class="flagimg mb-3">
+                <img :src="'/image/' + flag + '.png' " :alt="original_language">
+            </div>
             <p class="card-text">Vote: {{ vote_average }}</p>
             <p class="card-text" :class="overview">Overview: <small>{{ overview }}</small> </p>
-            
+
 
         </div>
 
@@ -28,6 +32,27 @@ export default {
         'vote_average',
         'overview',
     ],
+    data() {
+        return {
+            lenguages:[
+                    'en', 
+                    'it',
+                    'ja'
+                ]
+        }
+    },
+    computed: {
+        flag() {
+            if (this.lenguages.includes(this.original_language)) {
+                console.log(this.original_language);
+                return this.original_language;
+            } else {
+                console.log('flagnull');
+                return 'flagnull';
+
+            }
+        }
+    }
 
 }
 </script>
@@ -40,10 +65,26 @@ export default {
     box-shadow: 0 0 0.9rem rgb(80, 80, 80);
     --bs-card-bg: black !important;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
+
+    ;
+
+    .flagimg {
+        width: 30px;
+        height: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    ;
+
     .card-body {
         position: absolute;
         top: 0;
@@ -54,10 +95,12 @@ export default {
         transition: 0.7s;
         overflow-y: auto;
 
-        p{
+        p {
             font-size: 18px;
         }
     }
+
+    ;
 
     &.card:hover .card-body {
         opacity: 1;
@@ -65,5 +108,6 @@ export default {
         color: white;
     }
 
-}
-</style>
+    ;
+
+}</style>

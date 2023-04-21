@@ -14,7 +14,7 @@
                 <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="movie in store.moviesList">
                     
                     <SingleCard :title="movie.title" :src_image="movie.poster_path ? store.imgBaseURL + store.fileSize + movie.poster_path : '/nullimg.png'"
-                    :original_title="movie.original_title" :original_language="movie.original_language"
+                    :original_title="movie.original_title" :alt="movie.original_language"
                     :vote_average="movie.vote_average" :overview="movie.overview ? movie.overview : 'd-none'"/>
 
                 </div>
@@ -34,7 +34,6 @@
                     <SingleCard :title="serie.name" :src_image="serie.poster_path ? store.imgBaseURL + store.fileSize + serie.poster_path : '/nullimg.png'"
                     :original_title="serie.original_title" :original_language="serie.original_language"
                     :vote_average="serie.vote_average" :overview="serie.overview ? serie.overview : 'd-none'"/>
-                    <!--Aggiungere lo condizione a :overview-->
 
                 </div>
 
@@ -56,6 +55,7 @@
         data(){
             return{
                 store, 
+               
             }
         },
         methods:{
@@ -70,18 +70,21 @@
         height: 100vh;
         background: #000000;
         overflow-y: auto;
-        
-    }
-    #jumbo{
+
+        #jumbo{
         width: 100%;
         height: 600px;
 
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit:cover;
-            object-position: 50% 50%;
-        }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                object-position: 50% 50%;
+            }
+        };
+
+        
     }
+   
 
 </style>
