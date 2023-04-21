@@ -2,7 +2,7 @@
     <main>
         <!--Jumbotron-->
         <div id="jumbo">
-            <img src="/jumbonetflix.png" alt="">
+            <img src="/jumbonet.png" alt="">
         </div>
         <!--section films-->
         <section  class="container-fluid">
