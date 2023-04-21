@@ -14,5 +14,8 @@ export const store = reactive({
     },
     imgBaseURL: 'https://image.tmdb.org/t/p/',
     fileSize: 'w342',
-    
+    errors:{
+        movie: '',
+        serie: '',
+    }
 });

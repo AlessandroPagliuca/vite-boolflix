@@ -1,6 +1,6 @@
 <template>
   <HeaderComp @on-search="getData" />
-  <MainComp />
+  <MainComp :errorMovie="store.errors.movie" :errorSerie="store.errors.serie"/>
 </template>
 
 <script>
@@ -28,6 +28,9 @@ export default {
         console.log(res.data.results);
         this.store.moviesList = res.data.results;
 
+      }).catch((error)=>{
+        this.store.errors.movie = error.message;
+        console.log(this.store.errors.movie);
       });
 
     },
@@ -37,10 +40,15 @@ export default {
         console.log(res.data.results);
         this.store.seriesList = res.data.results;
 
+      }).catch((error)=>{
+        this.store.errors.serie = error.message;
+        console.log(this.store.errors.serie);
       });
 
     },
     getData(){
+      this.store.errors.movie = '';
+      this.store.errors.serie = '';
       this.getMovies();
       this.getSeries();
     }

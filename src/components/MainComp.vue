@@ -21,6 +21,8 @@
 
             </div>
 
+            <h4 class="text-white" v-if="errorMovie">{{ errorMovie }}</h4>
+
         </section>
         <!--section films-->
         <section  class="container-fluid">
@@ -39,6 +41,8 @@
 
             </div>
 
+            <h4 class="text-white" v-if="errorSerie">{{ errorSerie }}</h4>
+
         </section>
         
     </main>
@@ -52,6 +56,10 @@
         components:{
             SingleCard,
         },
+        props:[
+            'errorMovie',
+            'errorSerie'
+        ],
         data(){
             return{
                 store, 
