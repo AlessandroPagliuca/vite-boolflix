@@ -1,9 +1,11 @@
 @use './partials/variables' as *;
 
-// importing core styling file
-//@import "./fortawesome/scss/fortawesome.scss";
+$fa-font-path: "../webfonts";
 
-// our project needs Solid + Brands
-//@import "./fortawesome/scss/solid.scss";
-//@import "./fortawesome/scss/brands.scss";
+
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+// our project needs Solid + regular
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
 

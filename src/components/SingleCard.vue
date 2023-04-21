@@ -9,10 +9,10 @@
             <h5 class="my-3">Original title: {{ original_title }}</h5>
             <span class="card-text">Original language:</span>
 
-            <div class="flagimg mb-3 my-2">
+            <div class="flagimg mb-1 my-2">
                 <img :src="'/image/' + flag + '.png' " :alt="original_language">
             </div>
-            <p class="card-text">Vote: {{ vote_average }}</p>
+            <i class="fa-star" v-for="(n, index) in 5" :key="index" :class="(n <= stars) ? 'fa-solid' : 'fa-regular'"></i>
             <p class="card-text" :class="overview">Overview: <small>{{ overview }}</small> </p>
 
 
@@ -49,6 +49,9 @@ export default {
                 return 'flagnull';
 
             }
+        },
+        stars(){
+            return Math.round(this.vote_average / 2);
         }
     }
 
@@ -68,8 +71,6 @@ export default {
         height: 100%;
     }
 
-    ;
-
     .flagimg {
         width: 30px;
         height: 30px;
@@ -80,8 +81,6 @@ export default {
             object-fit: cover;
         }
     }
-
-    ;
 
     .card-body {
         position: absolute;
@@ -98,14 +97,15 @@ export default {
         }
     }
 
-    ;
-
     &.card:hover .card-body {
         opacity: 1;
         background: rgba(20, 20, 20, 0.6);
         color: white;
     }
 
-    ;
+    .fa-star{
+        color: yellow;
+    }
+}
 
-}</style>
+</style>
