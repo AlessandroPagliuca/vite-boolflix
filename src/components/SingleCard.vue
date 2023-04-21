@@ -9,7 +9,7 @@
             <h5 class="my-3">Original title: {{ original_title }}</h5>
             <span class="card-text">Original language:</span>
 
-            <div class="flagimg mb-3">
+            <div class="flagimg mb-3 my-2">
                 <img :src="'/image/' + flag + '.png' " :alt="original_language">
             </div>
             <p class="card-text">Vote: {{ vote_average }}</p>
@@ -38,16 +38,14 @@ export default {
                     'en', 
                     'it',
                     'ja'
-                ]
+                ],
         }
     },
     computed: {
         flag() {
             if (this.lenguages.includes(this.original_language)) {
-                console.log(this.original_language);
                 return this.original_language;
             } else {
-                console.log('flagnull');
                 return 'flagnull';
 
             }

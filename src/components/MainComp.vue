@@ -14,7 +14,7 @@
                 <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-3" v-for="movie in store.moviesList">
                     
                     <SingleCard :title="movie.title" :src_image="movie.poster_path ? store.imgBaseURL + store.fileSize + movie.poster_path : '/nullimg.png'"
-                    :original_title="movie.original_title" :alt="movie.original_language"
+                    :original_title="movie.original_title" :alt="movie.original_language" :original_language="movie.original_language"
                     :vote_average="movie.vote_average" :overview="movie.overview ? movie.overview : 'd-none'"/>
 
                 </div>
