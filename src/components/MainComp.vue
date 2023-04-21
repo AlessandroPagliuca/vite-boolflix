@@ -15,7 +15,7 @@
                     
                     <SingleCard :title="movie.title" :src_image="movie.poster_path ? store.imgBaseURL + store.fileSize + movie.poster_path : '/nullimg.png'"
                     :original_title="movie.original_title" :original_language="movie.original_language"
-                    :vote_average="movie.vote_average"/>
+                    :vote_average="movie.vote_average" :overview="movie.overview ? movie.overview : 'd-none'"/>
 
                 </div>
 
@@ -33,7 +33,8 @@
 
                     <SingleCard :title="serie.name" :src_image="serie.poster_path ? store.imgBaseURL + store.fileSize + serie.poster_path : '/nullimg.png'"
                     :original_title="serie.original_title" :original_language="serie.original_language"
-                    :vote_average="serie.vote_average"/>
+                    :vote_average="serie.vote_average" :overview="serie.overview"/>
+                    <!--Aggiungere lo condizione a :overview-->
 
                 </div>
 

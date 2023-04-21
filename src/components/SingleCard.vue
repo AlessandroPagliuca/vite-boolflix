@@ -5,10 +5,12 @@
 
         <div class="card-body">
 
-            <p class="fw-semibold">Title: {{ title }}</p>
-            <p class="fw-semibold">Original title: {{ original_title }}</p>
-            <p class="fw-semibold">Original language: {{ original_language }}</p>
-            <p class="fw-semibold">Vote: {{ vote_average }}</p>
+            <h5>Title: {{ title }}</h5>
+            <h5>Original title: {{ original_title }}</h5>
+            <p class="card-text">Original language: {{ original_language }}</p>
+            <p class="card-text">Vote: {{ vote_average }}</p>
+            <p class="card-text" :class="overview">Overview: <small>{{ overview }}</small> </p>
+            
 
         </div>
 
@@ -24,6 +26,7 @@ export default {
         'original_title',
         'original_language',
         'vote_average',
+        'overview',
     ],
 
 }
@@ -49,9 +52,10 @@ export default {
         bottom: 0;
         opacity: 0;
         transition: 0.7s;
+        overflow-y: auto;
 
         p{
-            font-size: 22px;
+            font-size: 18px;
         }
     }
 
