@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     position: relative;
-    height: 600px;
+    height: 400px;
     cursor: pointer;
     box-shadow: 0 0 0.9rem rgb(80, 80, 80);
     --bs-card-bg: black !important;
