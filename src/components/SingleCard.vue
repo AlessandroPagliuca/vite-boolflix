@@ -65,7 +65,6 @@ export default {
     cursor: pointer;
     box-shadow: 0 0 0.9rem rgb(80, 80, 80);
     --bs-card-bg: black !important;
-
     img {
         width: 100%;
         height: 100%;
@@ -106,6 +105,10 @@ export default {
     .fa-star{
         color: yellow;
     }
+}
+.card:hover{
+    transition: 0.7s;
+    transform: scale(1.05);
 }
 
 </style>
