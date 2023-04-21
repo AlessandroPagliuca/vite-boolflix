@@ -33,7 +33,7 @@
 
                     <SingleCard :title="serie.name" :src_image="serie.poster_path ? store.imgBaseURL + store.fileSize + serie.poster_path : '/nullimg.png'"
                     :original_title="serie.original_title" :original_language="serie.original_language"
-                    :vote_average="serie.vote_average" :overview="serie.overview"/>
+                    :vote_average="serie.vote_average" :overview="serie.overview ? serie.overview : 'd-none'"/>
                     <!--Aggiungere lo condizione a :overview-->
 
                 </div>
