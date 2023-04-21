@@ -25,24 +25,24 @@ export default {
     getMovies() {
       const url = this.store.baseUrl + this.store.endpoint.movie;
       axios.get(url, { params: this.store.params }).then((res) => {
-        console.log(res.data.results);
+        //console.log(res.data.results);
         this.store.moviesList = res.data.results;
 
       }).catch((error)=>{
         this.store.errors.movie = error.message;
-        console.log(this.store.errors.movie);
+        //console.log(this.store.errors.movie);
       });
 
     },
     getSeries() {
       const url = this.store.baseUrl + this.store.endpoint.serie;
       axios.get(url, { params: this.store.params }).then((res) => {
-        console.log(res.data.results);
+        //console.log(res.data.results);
         this.store.seriesList = res.data.results;
 
       }).catch((error)=>{
         this.store.errors.serie = error.message;
-        console.log(this.store.errors.serie);
+        //console.log(this.store.errors.serie);
       });
 
     },
