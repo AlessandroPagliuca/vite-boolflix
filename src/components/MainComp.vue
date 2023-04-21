@@ -58,20 +58,6 @@
             }
         },
         methods:{
-          /* getMovieImg(){
-            if(this.store.moviesList.poster_path !== null || this.store.moviesList.poster_path !== undefined){
-                return this.store.moviesList.poster_path;
-            } else{
-                return this.store.imgNull;
-            }
-        },
-        getSeriesImg(){
-            if(this.store.moviesList.poster_path !== null || this.store.moviesList.poster_path !== undefined){
-                return this.store.seriesList.poster_path;
-            } else{
-                return this.store.imgNull;
-            }
-        }*/
 
         },
     }
